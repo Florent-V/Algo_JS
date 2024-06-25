@@ -1,0 +1,18 @@
+{
+  "name": "algo_js",
+  "version": "1.0.0",
+  "description": "Algo en JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "Javascript",
+    "Algo"
+  ],
+  "author": "Florent Vasseur",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
