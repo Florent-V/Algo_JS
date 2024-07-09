@@ -18,8 +18,10 @@ class BinaryTree {
 
   insert(value) {
     const newNode = new Node(value);
-    if (!this.root) return this.root = newNode;
-    
+    if (!this.root) {
+      this.root = newNode
+      return;
+    };
     return this.insertNode(this.root, newNode);
   }
 
@@ -130,7 +132,7 @@ class BinaryTree {
 
     while (queue.length > 0) {
       const tempNode = queue.shift()
-      result.push(tempNode.value)
+      result.unshift(tempNode.value)
       if (tempNode.right) queue.push(tempNode.right)
       if (tempNode.left) queue.push(tempNode.left)
     }
@@ -143,9 +145,8 @@ class BinaryTree {
 
     if (value < node.value) {
       return this.findValueAndParent(value, node.left, node);
-    } else {
-      return this.findValueAndParent(value, node.right, node);
-    }
+    } 
+    return this.findValueAndParent(value, node.right, node);
   }
   
   remove(value) {

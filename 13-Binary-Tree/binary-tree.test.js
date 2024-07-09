@@ -83,7 +83,7 @@ describe('BinaryTree', () => {
 
   describe('reverseLevelOrder', () => {
     it('should return the nodes in reverse level order traversal', () => {
-      expect(tree.reverseLevelOrder()).toEqual([10, 20, 5, 30, 15, 7, 2]);
+      expect(tree.reverseLevelOrder()).toEqual([2, 7, 15, 30, 5, 20, 10]);
     });
   });
 
